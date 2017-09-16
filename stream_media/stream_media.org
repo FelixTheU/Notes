@@ -1,0 +1,20 @@
+
+__   ___    ___
+\ \ / / |  / __|
+ \ V /| |_| (__
+  \_/ |____\___|
+
+1) vlc 提供流媒体服务（将输入 out 到网络）:
+    server 生成流: vlc -vvv jewel.mp4 --sout "#rtp{dst=192.168.199.161,port=8554,sdp=rtsp://:8554/jewel.sdp}"
+    client 播放流: vlc -vvv rtsp://192.168.199.161:8554/jewel.sdp
+
+ ___ ___ __  __ ___ ___ ___
+| __| __|  \/  | _ \ __/ __|
+| _|| _|| |\/| |  _/ _| (_ |
+|_| |_| |_|  |_|_| |___\___|
+
+1) 编译 ffplay :
+   - 配置之前安装 SDL2:
+        在进行 ffmpeg 的配置之前需要先安装 SDL2，这样会编译出 ffplay。
+   - ffplay 无法运行报"no such audio device"
+        在 centos 7上编译出来的 ffplay 不能正常播放，需要安装 SDL2-devel
