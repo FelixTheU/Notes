@@ -18,3 +18,8 @@ __   ___    ___
         在进行 ffmpeg 的配置之前需要先安装 SDL2，这样会编译出 ffplay。
    - ffplay 无法运行报"no such audio device"
         在 centos 7上编译出来的 ffplay 不能正常播放，需要安装 SDL2-devel
+
+ ___ ___  _
+/ __|   \| |
+\__ \ |) | |__
+|___/___/|____|
